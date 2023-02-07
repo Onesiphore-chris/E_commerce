@@ -108,6 +108,7 @@ section{
     justify-content: space-between;
     z-index: 1000;
     background: var(--white);
+    
 }
 .header li {
         text-decoration: none;
@@ -115,19 +116,16 @@ section{
         position: relative;
 }
 
-.header  ul {
+.header  ul{
     position: absolute;
     line-height: 1em;
     font-size: 16px;
     background-color: var(--white-color);
     border: 1px solid var(--border-color);
-    z-index: 1;
-    padding: 1rem 1rem;
-   
+    z-index: 1; 
+    display: none;
 }
-.header li a{
-   
-}
+ 
 .header li .logo{
         background: rgb(219, 56, 91);
         width: 14rem;
@@ -350,6 +348,7 @@ section{
     cursor: pointer;
     text-align: center;
     margin: 0 .3rem;
+    
 }
 
 
