@@ -348,7 +348,72 @@ section{
     cursor: pointer;
     text-align: center;
     margin: 0 .3rem;
-    
+
+}
+
+/* Fin de mon header  */
+
+
+/* debut de mon header-nav*/
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: O O .938em;
+    display: flex;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+   
+}
+
+.trigger{
+    font-size: 4rem;
+    padding: 1rem;
+    display: flex;
+    margin-right: 1rem;
+}
+
+.mobile-hide{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+}
+.mobile-hide li{
+    padding: 20px;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: space-around;
+}
+.fly-item {
+    position: relative;
+    height: 16px;
+    font-weight: 200;
+    padding: 3px;
+    text-align: center;
+    line-height: 10px;
+    color: white;
+    font-size: 10px;
+    top: 15%;
+    width: 40px;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color: #ff6b6b;
+    position: absolute;
+   
+}
+.ri-arrow-down-s-line{
+    font-size:2rem;
+    position: relative;
+
+}
+.header-nav .rigth{
+    position: relative;
+    margin-left: auto;
+    align-items: flex-end;
+    justify-content: space-around;
 }
 
 
@@ -451,66 +516,26 @@ section{
 
 
 
-
-
-/*@media (max-width:1200px){
+@media  screen and (max-width:1200px){
     .header{
         padding: 1.5rem 2rem;
     }
     section{
         padding: 3rem 5% ;
-    }
+    }   
 }
-@media (max-width:991px){
-    html{
-        font-size: 55%;
-    }
-    section{
-        padding: 3rem 2rem;
-    }
-    .header #menu-btn{
-        
-            display: inline-block;
-        }
 
-        .navbar{
-            position: absolute;
-            top: 99%; left: 0; right: 0;
-            background: var(--white);border-top: var(--border);
-            border-bottom: var(--border);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-
-            
-        }
-        .navbar.active{
-            clip-path: polygon(0 0, 100% 0 , 100% 0, 0 0);
-        }
-        .navbar a{
-            display: block;
-            margin: 2rem;
-        }
+@media screen and (max-width: 992px) {
+   
+    .mobile-hide{
+        display: none;
     }
-    @media (max-width:768px){
-        .header .search-form{
-            width: 90%;
-        }
-        .header .login-form{
-            width: 90%;
-
-        }
-        .home .slide{
-            justify-content: center;
-        }
-        .home .slide .content{
-            text-align: center;
-        }
-        .home .slide h3{
-            font-size: 3rem;
-        }
+    .mobile-hide{
+        display: flex;
     }
-
-@media (max-width:450px){
-    html{
-        font-size: 50%;
+    .container{
+      padding: 0 2em; 
+     
     }
-}
+  }
+
